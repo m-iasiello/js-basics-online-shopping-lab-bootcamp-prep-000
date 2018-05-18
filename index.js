@@ -60,9 +60,15 @@ function removeFromCart(item) {
   for(var i = 0; i<cart.length; i++){
     var currentItem = cart[i]
     if(currentItem.itemName === item){
-      cart.rem
+      cart.splice(i,1)
+      return cart
     }
-    
+    else if(i===cart.length) {
+      return "That item is not in your cart."
+    }
+    else{
+      i++
+    }
   }
 }
 
