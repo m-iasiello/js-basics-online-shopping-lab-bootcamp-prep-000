@@ -38,7 +38,6 @@ function viewCart() {
       var cartOutput2 = start + middle.toString() + end
       return cartOutput2
     }
-    
   }
   else {
     return "Your shopping cart is empty."
@@ -47,6 +46,12 @@ function viewCart() {
 
 function total() {
   // write your code here
+  var currentPrice
+  var sum = 0
+  for(var i = 0; i < cart.length; i++) {
+    currentPrice = cart[i].itemPrice
+    sum += currentPrice
+  }
 }
 
 function removeFromCart(item) {
