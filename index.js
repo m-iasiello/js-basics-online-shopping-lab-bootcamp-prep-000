@@ -29,7 +29,8 @@ function viewCart() {
       var currentOutput = ` ${currentItem} at $${currentPrice}`
       middle.push(currentOutput)
     }  
-    var cartOutput = start + middle.toString() + end
+    var lastPlace = middle.pop()
+    var cartOutput = start + middle.toString() + ", and" + lastPlace + end
     return cartOutput
   }
   else {
