@@ -26,7 +26,7 @@ function viewCart() {
       var current = cart[i]
       var currentItem = current.itemName
       var currentPrice = current.itemPrice
-      var currentOutput = ` ${currentItem} at $${itemPrice}`
+      var currentOutput = ` ${currentItem} at $${currentPrice}`
       middle.push(currentOutput)
     }  
     var cartOutput = start + middle.toString() + end
