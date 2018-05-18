@@ -18,10 +18,21 @@ function addToCart(item) {
 
 function viewCart() {
   // write your code here
-  var start = "In your cart, you have,"
-  var end = "."
-  for (i = 0; i< cart.length; i++) {
-    
+  if (car.length>=1){
+    var start = "In your cart, you have"
+    var end = "."
+    var middle = []
+    for (i = 0; i< cart.length; i++) {
+      var current = cart[i]
+      var currentItem = current.itemName
+      var currentPrice = current.itemPrice
+      var currentOutput = ` ${currentItem} at $${itemPrice}`
+      middle.push(currentOutput)
+    }  
+    var cartOutput = start + middle.toString() + end
+  }
+  else {
+    return "Your shopping cart is empty."
   }
 }
 
