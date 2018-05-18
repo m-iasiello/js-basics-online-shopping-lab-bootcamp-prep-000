@@ -22,7 +22,7 @@ function viewCart() {
     var start = "In your cart, you have"
     var end = "."
     var middle = []
-    for (i = 0; i< cart.length; i++) {
+    for (var i = 0; i< cart.length; i++) {
       var current = cart[i]
       var currentItem = current.itemName
       var currentPrice = current.itemPrice
