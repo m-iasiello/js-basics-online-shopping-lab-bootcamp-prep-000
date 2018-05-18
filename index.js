@@ -29,9 +29,16 @@ function viewCart() {
       var currentOutput = ` ${currentItem} at $${currentPrice}`
       middle.push(currentOutput)
     }  
-    var lastPlace = middle.pop()
-    var cartOutput = start + middle.toString() + ", and" + lastPlace + end
-    return cartOutput
+    if(middle.length > 1){
+      var lastPlace = middle.pop()
+      var cartOutput = start + middle.toString() + ", and" + lastPlace + end
+      return cartOutput
+    }
+    else {
+      var cartOutput2 = start + middle.toString() + end
+      return cartOutput2
+    }
+    
   }
   else {
     return "Your shopping cart is empty."
