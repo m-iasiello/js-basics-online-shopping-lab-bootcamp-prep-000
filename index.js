@@ -57,6 +57,13 @@ function total() {
 
 function removeFromCart(item) {
   // write your code here
+  for(var i = 0; i<cart.length; i++){
+    var currentItem = cart[i]
+    if(currentItem.itemName === item){
+      cart.rem
+    }
+    
+  }
 }
 
 function placeOrder(cardNumber) {
