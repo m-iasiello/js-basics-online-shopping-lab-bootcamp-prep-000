@@ -66,9 +66,6 @@ function removeFromCart(item) {
     else if(i===cart.length) {
       return "That item is not in your cart."
     }
-    else{
-      i++
-    }
   }
 }
 
